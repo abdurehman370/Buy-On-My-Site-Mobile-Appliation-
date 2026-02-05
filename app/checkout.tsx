@@ -190,7 +190,7 @@ export default function CheckoutScreen() {
                 </View>
 
                 {/* Discounts */}
-                {cartData.discounts.length > 0 && (
+                {cartData.discounts && cartData.discounts.length > 0 && (
                     <View style={styles.discountsCard}>
                         <Text style={styles.sectionTitle}>💰 Applied Discounts</Text>
                         {cartData.discounts.map((discount, index) => (

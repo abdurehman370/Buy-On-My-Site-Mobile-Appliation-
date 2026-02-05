@@ -78,6 +78,20 @@ export default function IndexScreen() {
                 </TouchableOpacity>
 
                 <TouchableOpacity
+                    onPress={() => router.push('/lowes-browser')}
+                    style={[styles.button, { backgroundColor: '#004990', marginTop: 12 }]}
+                >
+                    <Text style={styles.buttonText}>Browse Lowe's</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    onPress={() => router.push('/harbor-browser')}
+                    style={[styles.button, { backgroundColor: '#d61c1c', marginTop: 12 }]}
+                >
+                    <Text style={styles.buttonText}>Browse Harbor Freight</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
                     onPress={() => router.push({ pathname: '/import', params: { url: 'https://www.homedepot.com/p/debug-product/12345' } })}
                     style={styles.debugBtn}
                 >
